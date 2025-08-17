@@ -28,7 +28,7 @@ namespace MCP2221A
         const int DEFAULT_PID = 0x00DD;
         static int result = 0;
         static uint numberOfDevices = 0;
-
+        static IntPtr deviceHandle = IntPtr.Zero;
         public MainWindow()
         {
             InitializeComponent();
@@ -38,7 +38,9 @@ namespace MCP2221A
             result = MCP2221.M_Mcp2221_GetConnectedDevices(DEFAULT_VID, DEFAULT_PID, ref numberOfDevices);
             if (result == MCP2221.M_E_NO_ERR)
             {
+                deviceHandle = MCP2221.M_Mcp2221_OpenByIndex(DEFAULT_VID, DEFAULT_PID, 0);
                 Debug.WriteLine($"Number of connected devices: {numberOfDevices}");
+                result = MCP2221.M_Mcp2221_Close(deviceHandle);
             }
         }
     }

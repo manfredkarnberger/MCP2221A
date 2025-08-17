@@ -18,3 +18,4 @@ D:\ws_VisualStudio\MCP2221A\obj\x64\Debug\MCP2221A.csproj.CoreCompileInputs.cach
 D:\ws_VisualStudio\MCP2221A\obj\x64\Debug\MCP2221A.csproj.Up2Date
 D:\ws_VisualStudio\MCP2221A\obj\x64\Debug\MCP2221A.exe
 D:\ws_VisualStudio\MCP2221A\obj\x64\Debug\MCP2221A.pdb
+D:\ws_VisualStudio\MCP2221A\obj\x64\Debug\MCP2221A.exe.config
